@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Fadi's homepage">
+    <title>Fadi Katto - Homepage</title>
+    <!-- bootstrap css link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500&display=swap" rel="stylesheet">
+    <!-- barcode font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+39&display=swap" rel="stylesheet">
+    <!-- jquery cdn -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- place after CDN to override bootstrap css -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- used to include icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+  </head>
+  <!-- bg stands for background -->
+  <body class="bg-light">
+    <header>
+      <!-- fixed-top makes navbar sticky/ navbar-light changes text to dark/ navbar-expand-md changes breakpoint for changing to mobile mode/p-0 removes padding-->
+      <nav class="navbar navbar-expand-md navbar-light fixed-top p-0">
+        <!-- p-2 will set padding all round as !important  -->
+        <div class="container-fluid p-2">
+          <!-- me for right and ms for left margin fo Bootstrap V5.0-->
+          <a class="navbar-brand p-0 ps-2 me-4" href="#">
+            <img 
+            class="logo-image"
+            style="vertical-align:middle"
+            src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-electricity-energy-kiranshastry-lineal-color-kiranshastry.png"
+            alt="" 
+            width="40" 
+            height="40">Fadi Katto
+          </a>
+
+
+          <!-- mobile drop down -->
+          <!-- d-flex pushes elements into rows and columns -->
+          <div class="d-flex flex-row">
+            <div>
+              <!-- navbar-toggler removes button when in maximized view -->
+              <button class="btn navbar-toggler btn-primary switch color-light" type="button">
+                <i class="icon bi-moon-fill" role="img" aria-label="GitHub"></i>
+              </button>
+            </div>
+            <div class="dropdown ms-2">
+              <!-- data-bs-toggle="dropdown" used to toggle the menu -->
+              <button class="btn navbar-toggler menu-button-light selector" 
+              type="button" 
+              data-bs-toggle="dropdown" 
+              aria-haspopup="true" 
+              aria-expanded="false">
+              <i class="bi bi-list"></i>
+              </button>
+              <!-- dropdown-menu-end centers drop down menu -->
+              <div class="dropdown-menu dropdown-menu-end bg-light" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item text-dark text-underline-hover" href="#">About</a>
+                <a class="dropdown-item text-dark text-underline-hover" href="#">Works</a>
+                <a class="dropdown-item text-dark text-underline-hover" href="#">Posts</a>
+                <a class="dropdown-item text-dark text-underline-hover" href="#">View Source</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- navigation Links -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-lg-0">
+              <li class="nav-item">
+                <!-- nav-link gives it its font style and active makes it clickable -->
+                <a class="nav-link active text-underline-hover" aria-current="page" href="#">Works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active ms-2 text-underline-hover" aria-current="page" href="#">Posts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active ms-2 text-underline-hover" href="#" >
+                  <!-- padding does not push elements, margin does push to make space -->
+                  <i class="bi-github me-1" role="img" aria-label="GitHub"></i>Source</a>
+              </li>
+            </ul>
+          </div>
+          <div class="collapse navbar-collapse justify-content-end">
+            <button class="btn btn-primary switch color-light">
+              <i class="icon bi-moon-fill" role="img" aria-label="GitHub"></i>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- my-5 is spacing top and bottom/ flex is like expanding into available space -->
+    <main class="my-6 bg-light pb-4">
+      <div class="container px-3">
+        <div class="d-flex justify-content-center hello-message ">
+          Hello, I'm an electrical engineer and software hobbyist!
+        </div>
+        <div class="row m-0">
+            <div class="col-9 p-0 text-dark">
+              <h2>Fadi Katto</h2>
+              <p>Engineer ( Problem Solver / Developer / Designer )</p>
+            </div>
+            <!-- include d-flex to manipulate content -->
+            <div class="col p-0 d-flex justify-content-center">
+              <img class= "personal-image" src="pic2.JPG" alt="">
+            </div>
+        </div>
+        <div class="row mb-4 mx-0 text-dark">
+          <h3 class="work-header p-0 my-3">Work</h2>
+          <p class="description p-0 m-0 ">Takuya is a freelance and a full-stack developer based in Osaka with a passion for building digital services/stuff he wants. He has a knack for all things launching products, from planning and designing all the way to solving real-life problems with code. When not online, he loves hanging out with his camera. Currently, he is living off of his own product called Inkdrop.</p>
+          <div class="d-flex justify-content-center p-0 mt-3"><button class="btn btn-outline-info text-dark" type="button">My Portfolio <i class="bi bi-caret-right-fill"></i></button></div>
+        </div>
+        <div class="mb-4 text-dark">
+          <h3 class="work-header my-3">Bio</h3>
+          <div class="state"><span class="year">1994</span>Born in Baghdad (بغداد), Iraq.</div>
+          <div class="state"><span class="year">2010</span>Moved to Calgary, Alberta, Canada.</div>
+          <div class="state"><span class="year">2015</span>Obtained the Canadian Citizenship.</div>
+          <div class="state"><span class="year">2021</span>Completed the Bacelor of Science in Electrical Engineering from the Univerity of Calgary. </div>
+          <div class="state"><span class="year">2022 to present</span>Actively seeking new and exciting opportunities.</div>
+        </div>
+        <div class="mb-4 text-dark">
+          <h3 class="work-header my-3">I ♥</h3>
+          <p class="description m-0">Alternative Music, Hiking, Camping, Soccer, Cars, DIY, Volunteering, and Community Work</p>
+        </div>
+        <div class="mb-4 text-dark">
+          <h3 class="work-header my-3">On the web</h3>
+          <ul class="soical-list m-0 p-0">
+            <li>
+              <a href="#" class="px-3">
+                <!-- btn gives it the round shape -->
+                <button class="btn btn-outline-info text-dark social-button text-underline-hover" type="button">
+                  <i class="bi-github me-2" role="img" aria-label="GitHub"></i>@Fadik1
+                </button>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="px-3">
+                <button class="btn btn-outline-info text-dark social-button text-underline-hover" type="button">
+                  <i class="bi-linkedin me-2" role="img" aria-label="GitHub"></i>@Fadik1
+                </button>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="d-flex justify-content-center bar-code text-dark"> 
+          *Lets connect*
+        </div>
+        <div class="d-flex justify-content-center text-dark rights ">
+          © <!-- -->2022<!-- --> Fadi Katto. All Rights Reserved.
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+    <!-- popper separately -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootsrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
