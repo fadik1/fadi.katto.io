@@ -59,4 +59,3 @@ $('.switch').click(()=>{
     $('.selector').toggleClass("menu-button-light menu-button-dark");
 
 })
-
